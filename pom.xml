@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración XML con versión y codificación -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Versión del modelo POM -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- Hereda de Spring Boot Parent para configuración predeterminada -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/>
+    </parent>
+    <!-- Identificador único del grupo/organización -->
+    <groupId>com.example</groupId>
+    <!-- Nombre único del artefacto (proyecto) -->
+    <artifactId>TareasCompletadas</artifactId>
+    <!-- Versión del proyecto -->
+    <version>1.0.0</version>
+    <!-- Nombre legible del proyecto -->
+    <name>TareasCompletadas</name> 
+    <!-- Descripción del proyecto -->
+    <description>Microservicio para gestionar tareas completadas</description>
+    <!-- Define la versión de Java a usar -->
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+    <!-- Sección donde se declaran las dependencias del proyecto -->
+    <dependencies>
+        <dependency>
+            <!-- Dependencia principal de Spring Boot para aplicaciones web -->
+            <!-- Incluye: Spring MVC, Tomcat, JSON processing, etc. -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <!-- Biblioteca para convertir entre objetos Java y JSON -->
+            <!-- Ya incluida en spring-boot-starter-web, pero se declara explícitamente -->
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
+    <!-- Configuración del proceso de build -->
+    <build>
+        <!-- Plugins de Maven a usar -->
+        <plugins>
+            <plugin>
+                <!-- Plugin específico de Spring Boot para empaquetar la aplicación -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- Define la clase principal que contiene el método main() -->
+                    <mainClass>com.example.TareasCompletadas.MicroServicio2</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

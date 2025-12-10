@@ -1,0 +1,21 @@
+[ {
+  "nombreTarea" : "Ejercicios de matematicas",
+  "fechaEntrega" : "20/10/2025",
+  "materia" : "Ecuaciones diferenciales",
+  "descripcion" : "Terminar los ejercicios de la pagina 202"
+}, {
+  "nombreTarea" : "Programar practica 4",
+  "fechaEntrega" : "23/11/2025",
+  "materia" : "Arqui",
+  "descripcion" : "Terminar de programar en VHDL"
+}, {
+  "nombreTarea" : "Investigacion de señales",
+  "fechaEntrega" : "23/10/2025",
+  "materia" : "Señales",
+  "descripcion" : "Investigar que son las series de Fourier"
+}, {
+  "nombreTarea" : "Práctica de microservicios",
+  "fechaEntrega" : "03/11/2025",
+  "materia" : "Sistemas distribuidos",
+  "descripcion" : "Realizar la práctica 8 en cualquier lenguaje de programación"
+} ]
